@@ -359,7 +359,7 @@ SELECT
         s12.December
         FROM 
 
-(SELECT u.id as user_id ,count(a.id) as Jan, CONCAT(u.first_name, " ", u.last_name) as Name FROM attandance as a RIGHT JOIN User as u on u.id = a.user_id AND MONTH(a.date) = 2 GROUP BY u.id) as s1 
+(SELECT u.id as user_id ,count(a.id) as Jan, CONCAT(u.first_name, " ", u.last_name) as Name FROM attandance as a RIGHT JOIN User as u on u.id = a.user_id AND MONTH(a.date) = 1 GROUP BY u.id) as s1 
 
 JOIN 
 
